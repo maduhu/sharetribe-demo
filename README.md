@@ -1,3 +1,11 @@
+
+###Experimental
+
+This is my experimental copy of Sharetribe. I will be striking off the installation items as I launch my own example web site with the Sharetribe platform.
+
+-Mike
+
+
 # Sharetribe
 
 [![Build Status](https://travis-ci.org/sharetribe/sharetribe.svg?branch=master)](https://travis-ci.org/sharetribe/sharetribe) [![Dependency Status](https://gemnasium.com/sharetribe/sharetribe.png)](https://gemnasium.com/sharetribe/sharetribe) [![Code Climate](https://codeclimate.com/github/sharetribe/sharetribe.png)](https://codeclimate.com/github/sharetribe/sharetribe) [![Coverage Status](https://coveralls.io/repos/sharetribe/sharetribe/badge.png)](https://coveralls.io/r/sharetribe/sharetribe)
@@ -17,15 +25,15 @@ Below the installation instructions there is space for Operating system-specific
 
 
 * Before you get started, you need to have or install the following:
-  * Ruby (we use currently version 2.1.1 and don't guarantee everything working with others. If you need multiple versions of Ruby, [RVM](https://rvm.io//) can help.)
-  * [RubyGems](http://rubygems.org/)
-  * Bundler `gem install bundler`
-  * [Git](http://help.github.com/git-installation-redirect)
-* Get the code (git clone is probably easiest way: `git clone git://github.com/sharetribe/sharetribe.git`)
-* Go to the root folder of Sharetribe
-* Copy the example database configuration file as database.yml, which will be used to read the database information: `cp config/database.example.yml config/database.yml`
-* You need to have a database available for Sharetribe and a DB user account that has access to it. We have only used MySQL, so we give no guarantees of things working with others (e.g. PostgreSQL). (If you are going to do development you should have separate databases for development and testing also).
-  * You can [download MySQL from here](http://dev.mysql.com/downloads/mysql/)
+  * ~~Ruby (we use currently version 2.1.1 and don't guarantee everything working with others. If you need multiple versions of Ruby, [RVM](https://rvm.io//) can help.)~~
+  * ~~[RubyGems](http://rubygems.org/)~~
+  * ~~Bundler `gem install bundler`~~
+  * ~~[Git](http://help.github.com/git-installation-redirect)~~
+* ~~Get the code (git clone is probably easiest way: `git clone git://github.com/sharetribe/sharetribe.git`)~~
+* ~~Go to the root folder of Sharetribe~~
+* ~~Copy the example database configuration file as database.yml, which will be used to read the database information: `cp config/database.example.yml config/database.yml`~~
+* ~~You need to have a database available for Sharetribe and a DB user account that has access to it. We have only used MySQL, so we give no guarantees of things working with others (e.g. PostgreSQL). (If you are going to do development you should have separate databases for development and testing also).~~
+  * ~~You can [download MySQL from here](http://dev.mysql.com/downloads/mysql/)~~
   * [These commands](https://gist.github.com/804314) can help you in the making of the needed user and databases.
 * Edit details according to your database to `config/database.yml` (if you are not going to develop Sharetribe, it's enough to fill in the production database)
   * Probably you only need to change the passwords to the same that you used when creating the databases.
