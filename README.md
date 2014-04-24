@@ -40,9 +40,9 @@ Below the installation instructions there is space for Operating system-specific
 * ~~Copy the example configuration file as `config.yml`, which will be used to read the Sharetribe configuration information: `cp config/config.example.yml config/config.yml`~~
 * <strong>Edit details according to your system configuration to `config/config.yml`.</strong>
 * ~~If you are planning to run Sharetribe in production mode on your local machine (without Apache or similar server in front) you'll need to set the value of `serve_static_assets_in_production` to `true` (to make images and CSS files show correctly). Otherwise leave it as it is.~~
-* ~~Install Sphinx. Version 2.1.4 has been used successfully, but probably also bit newer and older versions will work. See [Sphinx installation instructions](http://pat.github.com/ts/en/installing_sphinx.html) (no need to start it yet. You can try running `searchd` command, but it should fail at this point complaining about missing config) <strong>(I'm using v2.1.7)</strong>~~
+* ~~Install Sphinx. Version 2.1.4 has been used successfully, but probably also bit newer and older versions will work. See [Sphinx installation instructions](http://pat.github.com/ts/en/installing_sphinx.html) (no need to start it yet. You can try running `searchd` command, but it should fail at this point complaining about missing config)~~ <strong>(I'm using v2.1.7)</strong>
 * ~~Install [Imagemagick](http://www.imagemagick.org)~~
-* run `bundle install` in the project root directory (sharetribe) to install required gems
+* ~~run `bundle install` in the project root directory (sharetribe) to install required gems~~
 * (In the following commands, leave out the `RAILS_ENV=production` part if you want to get Sharetribe running in development mode.) Load the database structure to your database: `rake RAILS_ENV=production db:structure:load`
 * run sphinx index `rake RAILS_ENV=production ts:index`
 * start sphinx daemon `rake RAILS_ENV=production ts:start`
