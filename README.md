@@ -34,12 +34,12 @@ Below the installation instructions there is space for Operating system-specific
 * ~~Copy the example database configuration file as database.yml, which will be used to read the database information: `cp config/database.example.yml config/database.yml`~~
 * ~~You need to have a database available for Sharetribe and a DB user account that has access to it. We have only used MySQL, so we give no guarantees of things working with others (e.g. PostgreSQL). (If you are going to do development you should have separate databases for development and testing also).~~
   * ~~You can [download MySQL from here](http://dev.mysql.com/downloads/mysql/)~~
-  * [These commands](https://gist.github.com/804314) can help you in the making of the needed user and databases.
-* Edit details according to your database to `config/database.yml` (if you are not going to develop Sharetribe, it's enough to fill in the production database)
-  * Probably you only need to change the passwords to the same that you used when creating the databases.
-* Copy the example configuration file as `config.yml`, which will be used to read the Sharetribe configuration information: `cp config/config.example.yml config/config.yml`
-* Edit details according to your system configuration to `config/config.yml`.
-* If you are planning to run Sharetribe in production mode on your local machine (without Apache or similar server in front) you'll need to set the value of `serve_static_assets_in_production` to `true` (to make images and CSS files show correctly). Otherwise leave it as it is.
+  * ~~[These commands](https://gist.github.com/804314) can help you in the making of the needed user and databases.~~
+* ~~Edit details according to your database to `config/database.yml` (if you are not going to develop Sharetribe, it's enough to fill in the production database)~~
+  * ~~Probably you only need to change the passwords to the same that you used when creating the databases.~~
+* ~~Copy the example configuration file as `config.yml`, which will be used to read the Sharetribe configuration information: `cp config/config.example.yml config/config.yml`~~
+* <strong>Edit details according to your system configuration to `config/config.yml`.</strong>
+* ~~If you are planning to run Sharetribe in production mode on your local machine (without Apache or similar server in front) you'll need to set the value of `serve_static_assets_in_production` to `true` (to make images and CSS files show correctly). Otherwise leave it as it is.~~
 * Install Sphinx. Version 2.1.4 has been used successfully, but probably also bit newer and older versions will work. See [Sphinx installation instructions](http://pat.github.com/ts/en/installing_sphinx.html) (no need to start it yet. You can try running `searchd` command, but it should fail at this point complaining about missing config)
 * Install [Imagemagick](http://www.imagemagick.org)
 * run `bundle install` in the project root directory (sharetribe) to install required gems
