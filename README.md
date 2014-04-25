@@ -43,10 +43,10 @@ Below the installation instructions there is space for Operating system-specific
 * ~~Install Sphinx. Version 2.1.4 has been used successfully, but probably also bit newer and older versions will work. See [Sphinx installation instructions](http://pat.github.com/ts/en/installing_sphinx.html) (no need to start it yet. You can try running `searchd` command, but it should fail at this point complaining about missing config)~~ <strong>(I'm using v2.1.7)</strong>
 * ~~Install [Imagemagick](http://www.imagemagick.org)~~
 * ~~run `bundle install` in the project root directory (sharetribe) to install required gems~~
-* (In the following commands, leave out the `RAILS_ENV=production` part if you want to get Sharetribe running in development mode.) Load the database structure to your database: `rake RAILS_ENV=production db:structure:load`
-* run sphinx index `rake RAILS_ENV=production ts:index`
-* start sphinx daemon `rake RAILS_ENV=production ts:start`
-* If you want to run Sharetribe in production mode (i.e. you are not developing the software) you'll need to precompile the assets. This puts the Javascript and CSS files in right places. Use command: `rake assets:precompile`
+* ~~(In the following commands, leave out the `RAILS_ENV=production` part if you want to get Sharetribe running in development mode.) Load the database structure to your database: `rake RAILS_ENV=production db:structure:load`~~
+* ~~run sphinx index `rake RAILS_ENV=production ts:index`~~
+* ~~start sphinx daemon `rake RAILS_ENV=production ts:start`~~
+* ~~If you want to run Sharetribe in production mode (i.e. you are not developing the software) you'll need to precompile the assets. This puts the Javascript and CSS files in right places. Use command: `rake assets:precompile`~~
 * If you want to enable Sharetribe to send email locally (in the development environment), you might want to change the email settings in the config file. There is an example of configuring settings using a gmail account, but you can also use any other SMTP server. If you do not touch the settings, the development version works otherwise normally but might crash in instances where it tries to send email (like when sending a message to another user).
 * Invoke the delayed job worker on your local machine: `rake RAILS_ENV=production jobs:work`. The worker processes tasks that are done in the background, like processing images and sending email notifications.
 * Start the server. The simplest way is to use command `rails server` which will start it on Webrick, which is good option for development use.
