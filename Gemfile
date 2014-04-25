@@ -26,7 +26,7 @@ gem 'jquery-rails'
 #gem 'thin'
 gem 'unicorn', "~>4.6.3"
 
-gem "mysql2"
+gem 'mysql2', '~>0.3.15'
 gem 'haml'
 gem 'sass', "  ~> 3.2.9"
 gem 'rest-client', '>= 1.6.0'
